@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+Calendário de Eventos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de calendário de eventos desenvolvido com React e integrado ao banco de dados Supabase para armazenamento e gerenciamento de eventos.
 
-## Available Scripts
+Configuração
+Para configurar e executar este projeto em sua máquina local, siga estas etapas:
 
-In the project directory, you can run:
+1. Clone o repositório:
+bash
+git clone https://github.com/seu-usuario/calendario-eventos.git
 
-### `npm start`
+2. Instale as dependências: Navegue até o diretório do projeto e execute o comando:
+bash
+cd calendario-eventos/frontend npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Configure o Supabase:
+•	Crie uma conta no Supabase se ainda não tiver uma.
+•	Crie um novo projeto no painel do Supabase e obtenha sua URL e chave anônima.
+•	Cole a URL e a chave anônima no arquivo supabase.js localizado em frontend/src/services.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Execute o projeto: De volta ao diretório raiz do projeto, execute o comando:
+sql:
+npm start
+Isso iniciará o servidor de desenvolvimento. O aplicativo estará disponível em http://localhost:3000.
 
-### `npm test`
+Funcionalidades
+•	Adição de eventos.
+•	Busca de eventos por título, data ou descrição.
+•	Listagem de todos os eventos cadastrados.
+•	Exclusão de eventos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Estrutura do Projeto
 
-### `npm run build`
+O projeto possui a seguinte estrutura de pastas:
+•	public: Arquivos públicos, incluindo o arquivo HTML principal.
+•	src: Código-fonte React.
+•	components: Componentes React reutilizáveis.
+•	pages: Componentes de página individuais.
+•	services: Configuração e integração com o Supabase.
+•	App.js: Componente principal do aplicativo.
+•	index.js: Ponto de entrada do React.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contribuição
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga estas etapas:
+1.	Fork este repositório.
+2.	Crie sua própria branch (git checkout -b feature/sua-funcionalidade).
+3.	Faça suas alterações e commit (git commit -am 'Adicionar nova funcionalidade').
+4.	Empurre para a branch (git push origin feature/sua-funcionalidade).
+5.	Abra um pull request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Autores
+•	Rafael Rocha
 
-### `npm run eject`
+Licença
+Este projeto é licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
