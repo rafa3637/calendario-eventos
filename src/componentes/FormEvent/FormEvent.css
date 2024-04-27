@@ -1,0 +1,21 @@
+   /* FormEvent.css */
+
+.form-button {
+    background-color: #BDBDBD;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #642EFE;
+    color: #ffffff;
+}
+
+.form-button:active {
+    background-color: #686567; /* Altere para a cor desejada quando o botão é clicado */
+    color: #ffffff; /* Altere para a cor do texto desejada quando o botão é clicado */
+}
